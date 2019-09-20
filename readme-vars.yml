@@ -1,0 +1,43 @@
+---
+
+# project information
+project_name: pylon
+project_url: "https://github.com/pylonide/pylon"
+project_logo: "https://raw.githubusercontent.com/pylonide/pylon/master/doc/screenshot02.png"
+project_blurb: |
+  [{{ project_name|capitalize }}]({{ project_url }}) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
+
+# container parameters
+param_container_name: "{{ project_name }}"
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3131", internal_port: "3131", port_desc: "The port for the Pylon web interface" }
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London"}
+
+# optional params
+opt_param_usage_include_vols: true
+opt_param_volumes:
+  - { vol_path: "/code", vol_host_path: "<path to your code>", desc: "Optionally if you want the bind mount your own code and have changes survive container upgrades." }
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "GITURL", env_value: "https://github.com/linuxserver/docker-pylon.git", desc: "Specify a git repo to checkout on first startup"}
+  - { env_var: "PYUSER", env_value: "myuser", desc: "Specify a basic auth user."}
+  - { env_var: "PYPASS", env_value: "mypass", desc: "Specify a basic auth password."}
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  Access the webui at http://your-ip:3131, more information [here](https://github.com/pylonide/pylon).
+
+# changelog
+changelogs:
+  - { date: "19.09.19:", desc: "Initial Release." }

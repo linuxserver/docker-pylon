@@ -1,0 +1,29 @@
+---
+
+# jenkins variables
+project_name: docker-pylon
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'pylonide'
+  - EXT_REPO = 'pylon'
+  - BUILD_VERSION_ARG = 'PYLON_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-pylon'
+  - CONTAINER_NAME = 'pylon'
+  - DOCKERHUB_IMAGE = 'linuxserver/pylon'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/pylon'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/pylon'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='3131'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
