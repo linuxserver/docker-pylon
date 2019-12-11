@@ -10,7 +10,7 @@ coreutils-8.31-r0
 expat-2.2.8-r0
 findutils-4.6.0-r1
 gdbm-1.13-r1
-git-2.22.0-r0
+git-2.22.2-r0
 http-parser-2.9.2-r0
 libacl-2.2.52-r6
 libattr-2.4.48-r0
