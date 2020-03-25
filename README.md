@@ -118,7 +118,6 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PYPASS=mypass` | Specify a basic auth password. |
 | `-v /code` | Optionally if you want the bind mount your own code and have changes survive container upgrades. |
 
-
 ## Environment variables from files (Docker secrets)
 
 You can set any environment variable from a file by using a special prepend `FILE__`. 
