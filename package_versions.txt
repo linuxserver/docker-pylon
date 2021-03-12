@@ -11,7 +11,7 @@ coreutils-8.32-r0
 expat-2.2.9-r1
 findutils-4.7.0-r0
 gdbm-1.13-r1
-git-2.26.2-r0
+git-2.26.3-r0
 libacl-2.2.53-r0
 libattr-2.4.48-r0
 libbz2-1.0.8-r1
