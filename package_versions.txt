@@ -1,10 +1,10 @@
 alpine-baselayout-3.2.0-r7
 alpine-keys-2.2-r0
-apk-tools-2.10.7-r0
+apk-tools-2.10.8-r0
 bash-5.0.17-r0
 brotli-libs-1.0.9-r1
 busybox-1.31.1-r20
-c-ares-1.16.1-r0
+c-ares-1.17.2-r0
 ca-certificates-20191127-r4
 ca-certificates-bundle-20191127-r4
 coreutils-8.32-r0
