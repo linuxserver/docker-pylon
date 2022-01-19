@@ -1,13 +1,14 @@
 #!/usr/bin/with-contenv bash
 
 cd /app/pylon
+
 [[ -n ${PYUSER+x} ]] && [[ -n ${PYPASS+x} ]] && \
 exec \
-        s6-setuidgid abc \
-        node server.js -l 0.0.0.0 -p 3131 -w /code \
-	--username "${PYUSER}" --password "${PYPASS}"
+    s6-setuidgid abc \
+    node server.js -l 0.0.0.0 -p 3131 -w /code \
+    --username "${PYUSER}" --password "${PYPASS}"
 
 [[ -z ${PYUSER+x} ]] && [[ -z ${PYPASS+x} ]] && \
 exec \
-	s6-setuidgid abc \
-	node server.js -l 0.0.0.0 -p 3131 -w /code
+    s6-setuidgid abc \
+    node server.js -l 0.0.0.0 -p 3131 -w /code
