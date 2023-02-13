@@ -9,13 +9,13 @@ if [[ ! -e /lock.file ]]; then
     sed -e 's/^wheel:\(.*\)/wheel:\1,abc/g' -i /etc/group
     # create directory for project
     mkdir -p /code
-    lsiown abc:abc \
-        /code
     # make sure URL is set and folder is empty to clone code 
     if [[ ${GITURL+x} ]] && [[ ! "$(/bin/ls -A /code 2>/dev/null)" ]] ; then \
         # clone the url the user passed to this directory
         git clone "${GITURL}" /code
     fi
+    lsiown -R abc:abc \
+        /code
 else
     # lock exists not importing project this is a restart
     echo "Lock exists just starting pylon"
