@@ -1,16 +1,18 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # check for lock file to only run git operations once
-if [ ! -e /lock.file ]; then
+if [[ ! -e /lock.file ]]; then
     # Give abc a sudo shell for development
-    chsh abc -s /bin/bash
-    sed -e 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' \
+    sed -e 's/# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/g' \
         -i /etc/sudoers
     sed -e 's/^wheel:\(.*\)/wheel:\1,abc/g' -i /etc/group
     # create directory for project
     mkdir -p /code
+    lsiown abc:abc \
+        /code
     # make sure URL is set and folder is empty to clone code 
-    if [ ${GITURL+x} ] && [ ! "$(/bin/ls -A /code 2>/dev/null)" ] ; then \
+    if [[ ${GITURL+x} ]] && [[ ! "$(/bin/ls -A /code 2>/dev/null)" ]] ; then \
         # clone the url the user passed to this directory
         git clone "${GITURL}" /code
     fi
@@ -24,7 +26,6 @@ touch /lock.file
 
 # permissions
 mkdir -p /config/sessions
-echo "[cont-init.d] Setting permissions this may take some time"
-chown -R abc:abc \
-    /code \
+
+lsiown -R abc:abc \
     /config
