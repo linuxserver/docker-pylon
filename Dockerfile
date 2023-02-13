@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:3.17
 
 # set version label
 ARG BUILD_DATE
@@ -10,9 +12,7 @@ LABEL maintainer="thelamer"
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    curl \
-    g++ \
-    make \
+    build-base \
     npm && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
@@ -21,7 +21,6 @@ RUN \
     nodejs \
     python3 \
     sudo && \
-  npm config set unsafe-perm true && \
   echo "**** install Pylon ****" && \
   mkdir -p \
     /app/pylon && \

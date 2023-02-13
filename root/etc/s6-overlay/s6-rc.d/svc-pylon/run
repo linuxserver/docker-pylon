@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+if [[ -n ${PYUSER+x} ]] && [[ -n ${PYPASS+x} ]]; then
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3131" \
+            cd /app/pylon s6-setuidgid abc \
+            node server.js -l 0.0.0.0 -p 3131 -w /code \
+            --username "${PYUSER}" --password "${PYPASS}"
+elif [[ -z ${PYUSER+x} ]] && [[ -z ${PYPASS+x} ]]; then
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3131" \
+            cd /app/pylon s6-setuidgid abc \
+            node server.js -l 0.0.0.0 -p 3131 -w /code
+else
+    echo "**** You must specify both PYUSER _and_ PYPASS or neither ****"
+    echo "****         Starting without a username/password         ****"
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3131" \
+            cd /app/pylon s6-setuidgid abc \
+            node server.js -l 0.0.0.0 -p 3131 -w /code
+fi

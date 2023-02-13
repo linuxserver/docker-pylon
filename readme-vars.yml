@@ -26,7 +26,7 @@ param_env_vars:
 # optional params
 opt_param_usage_include_vols: true
 opt_param_volumes:
-  - { vol_path: "/code", vol_host_path: "<path to your code>", desc: "Optionally if you want the bind mount your own code and have changes survive container upgrades." }
+  - { vol_path: "/code", vol_host_path: "/path/to/your/code", desc: "Optionally if you want the bind mount your own code and have changes survive container upgrades." }
 opt_param_usage_include_env: true
 opt_param_env_vars:
   - { env_var: "GITURL", env_value: "https://github.com/linuxserver/docker-pylon.git", desc: "Specify a git repo to checkout on first startup"}
@@ -40,6 +40,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3." }
   - { date: "19.01.22:", desc: "Rebasing to alpine 3.15." }
   - { date: "02.06.20:", desc: "Rebasing to alpine 3.12." }
   - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
