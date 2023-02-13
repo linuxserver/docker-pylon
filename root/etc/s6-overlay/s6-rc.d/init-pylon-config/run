@@ -13,9 +13,13 @@ if [[ ! -e /lock.file ]]; then
     if [[ ${GITURL+x} ]] && [[ ! "$(/bin/ls -A /code 2>/dev/null)" ]] ; then \
         # clone the url the user passed to this directory
         git clone "${GITURL}" /code
+        lsiown -R abc:abc \
+            /code
+    else
+        lsiown abc:abc \
+            /code
     fi
-    lsiown -R abc:abc \
-        /code
+
 else
     # lock exists not importing project this is a restart
     echo "Lock exists just starting pylon"
