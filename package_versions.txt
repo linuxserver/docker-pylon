@@ -259,7 +259,6 @@ negotiator                    0.6.3                   npm
 netcat-openbsd                1.219-r1                apk           
 netutil                       0.0.2                   npm           
 nghttp2-libs                  1.55.1-r0               apk           
-node                          20.5.0                  binary        
 node-pty                      1.0.0                   npm           
 nodejs-current                20.5.0-r0               apk           
 object-assign                 4.1.1                   npm           
