@@ -325,9 +325,9 @@ pylon.run.ruby                0.0.1                   npm
 pylon.run.sandbox             0.0.1                   npm           
 pylon.run.shell               0.0.1                   npm           
 pylon.socket                  0.0.1                   npm           
-python3                       3.11.4-r0               apk           
-python3-pyc                   3.11.4-r0               apk           
-python3-pycache-pyc0          3.11.4-r0               apk           
+python3                       3.11.5-r0               apk           
+python3-pyc                   3.11.5-r0               apk           
+python3-pycache-pyc0          3.11.5-r0               apk           
 qs                            6.11.0                  npm           
 qs                            6.11.2                  npm           
 random-bytes                  1.0.0                   npm           
