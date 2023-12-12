@@ -89,7 +89,7 @@ coverage                      1.2.1                   java-archive
 cross-spawn                   7.0.3                   npm           
 csrf                          3.1.0                   npm           
 csurf                         1.11.0                  npm           
-curl                          8.4.0-r0                apk           
+curl                          8.5.0-r0                apk           
 debug                         2.6.9                   npm           
 debug                         4.3.4                   npm           
 depd                          1.1.2                   npm           
@@ -208,7 +208,7 @@ isexe                         2.0.0                   npm
 jackspeak                     2.2.0                   npm           
 jetty                         6.1.19                  java-archive  
 jetty-util                    6.1.19                  java-archive  
-jq                            1.6-r3                  apk           
+jq                            1.6-r4                  apk           
 jsonfile                      4.0.0                   npm           
 kruptein                      2.2.3                   npm           
 lib.packed                    0.0.1                   npm           
@@ -219,7 +219,7 @@ libbsd                        0.11.7-r1               apk
 libbz2                        1.0.8-r5                apk           
 libc-utils                    0.7.2-r5                apk           
 libcrypto3                    3.1.4-r1                apk           
-libcurl                       8.4.0-r0                apk           
+libcurl                       8.5.0-r0                apk           
 libexpat                      2.5.0-r1                apk           
 libffi                        3.4.4-r2                apk           
 libgcc                        12.2.1_git20220924-r10  apk           
