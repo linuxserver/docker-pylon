@@ -34,6 +34,7 @@ app_setup_block: |
   Access the webui at http://your-ip:3131, more information [here](https://github.com/pylonide/pylon).
 # changelog
 changelogs:
+  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "12.07.23:", desc: "Rebase to Alpine 3.18"}
   - {date: "04.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3."}
