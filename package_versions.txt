@@ -27,7 +27,7 @@ ada-libs                      2.5.1-r0                apk
 alpine-baselayout             3.4.3-r1                apk           
 alpine-baselayout-data        3.4.3-r1                apk           
 alpine-keys                   2.4-r1                  apk           
-alpine-release                3.18.5-r0               apk           
+alpine-release                3.18.6-r0               apk           
 amd-loader                    0.0.8                   npm           
 ansi-regex                    5.0.1                   npm           
 ansi-regex                    6.0.1                   npm           
@@ -83,7 +83,7 @@ cookie                        0.4.2                   npm
 cookie-parser                 1.4.6                   npm           
 cookie-signature              1.0.6                   npm           
 corepack                      0.20.0                  npm           
-coreutils                     9.3-r1                  apk           
+coreutils                     9.3-r2                  apk           
 cors                          2.8.5                   npm           
 coverage                      1.2.1                   java-archive  
 cross-spawn                   7.0.3                   npm           
@@ -218,7 +218,7 @@ libattr                       2.5.1-r4                apk
 libbsd                        0.11.7-r1               apk           
 libbz2                        1.0.8-r5                apk           
 libc-utils                    0.7.2-r5                apk           
-libcrypto3                    3.1.4-r4                apk           
+libcrypto3                    3.1.4-r5                apk           
 libcurl                       8.5.0-r0                apk           
 libexpat                      2.5.0-r1                apk           
 libffi                        3.4.4-r2                apk           
@@ -229,7 +229,7 @@ libmd                         1.0.4-r2                apk
 libncursesw                   6.4_p20230506-r0        apk           
 libpanelw                     6.4_p20230506-r0        apk           
 libproc2                      4.0.4-r0                apk           
-libssl3                       3.1.4-r4                apk           
+libssl3                       3.1.4-r5                apk           
 libstdc++                     12.2.1_git20220924-r10  apk           
 libunistring                  1.1-r1                  apk           
 libuv                         1.44.2-r2               apk           
