@@ -378,7 +378,7 @@ tsscmp                        1.0.6                   npm
 type-is                       1.6.18                  npm           
 typedarray-to-buffer          3.1.5                   npm           
 typescript                    5.1.6                   npm           
-tzdata                        2023d-r0                apk           
+tzdata                        2024a-r0                apk           
 uglify-js                     3.15.3                  npm           
 uid-safe                      2.1.5                   npm           
 universalify                  0.1.2                   npm           
