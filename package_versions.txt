@@ -35,7 +35,7 @@ ansi-styles                   4.3.0                   npm
 ansi-styles                   6.2.1                   npm                           
 antlr                         3.1.3                   java-archive                  
 antlr-runtime                 3.1.3                   java-archive                  
-apk-tools                     2.14.3-r1               apk                           
+apk-tools                     2.14.4-r0               apk                           
 architect                     0.1.13                  npm                           
 architect.log                 0.0.1                   npm                           
 asap                          2.0.6                   npm                           
