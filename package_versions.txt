@@ -27,7 +27,7 @@ ada-libs                      2.5.1-r0                apk
 alpine-baselayout             3.4.3-r1                apk                           
 alpine-baselayout-data        3.4.3-r1                apk                           
 alpine-keys                   2.4-r1                  apk                           
-alpine-release                3.18.7-r0               apk                           
+alpine-release                3.18.8-r0               apk                           
 amd-loader                    0.0.8                   npm                           
 ansi-regex                    5.0.1                   npm                           
 ansi-regex                    6.0.1                   npm                           
@@ -90,7 +90,7 @@ coverage                      1.2.1                   java-archive
 cross-spawn                   7.0.3                   npm                           
 csrf                          3.1.0                   npm                           
 csurf                         1.11.0                  npm                           
-curl                          8.5.0-r0                apk                           
+curl                          8.9.0-r0                apk                           
 debug                         2.6.9                   npm                           
 debug                         4.3.4                   npm           (+1 duplicate)  
 depd                          1.1.2                   npm                           
@@ -220,7 +220,7 @@ libbsd                        0.11.7-r1               apk
 libbz2                        1.0.8-r5                apk                           
 libc-utils                    0.7.2-r5                apk                           
 libcrypto3                    3.1.6-r0                apk                           
-libcurl                       8.5.0-r0                apk                           
+libcurl                       8.9.0-r0                apk                           
 libexpat                      2.6.2-r0                apk                           
 libffi                        3.4.4-r2                apk                           
 libgcc                        12.2.1_git20220924-r10  apk                           
