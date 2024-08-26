@@ -16,9 +16,6 @@ param_container_name: "{{ project_name }}"
 param_usage_include_ports: true
 param_ports:
   - {external_port: "3131", internal_port: "3131", port_desc: "The port for the Pylon web interface"}
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London"}
 # optional params
 opt_param_usage_include_vols: true
 opt_param_volumes:
@@ -34,6 +31,7 @@ app_setup_block: |
   Access the webui at http://your-ip:3131, more information [here](https://github.com/pylonide/pylon).
 # changelog
 changelogs:
+  - {date: "26.08.24:", desc: "Rebase to Alpine 3.20"}
   - {date: "12.07.23:", desc: "Rebase to Alpine 3.18"}
   - {date: "04.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3."}
