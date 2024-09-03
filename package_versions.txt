@@ -92,7 +92,7 @@ coverage                      1.2.1                  java-archive
 cross-spawn                   7.0.3                  npm                           
 csrf                          3.1.0                  npm                           
 csurf                         1.11.0                 npm                           
-curl                          8.9.0-r0               apk                           
+curl                          8.9.1-r1               apk                           
 debug                         2.6.9                  npm                           
 debug                         4.3.4                  npm           (+1 duplicate)  
 depd                          1.1.2                  npm                           
@@ -223,7 +223,7 @@ libbase64                     0.5.2-r0               apk
 libbsd                        0.12.2-r0              apk                           
 libbz2                        1.0.8-r6               apk                           
 libcrypto3                    3.3.1-r3               apk                           
-libcurl                       8.9.0-r0               apk                           
+libcurl                       8.9.1-r1               apk                           
 libexpat                      2.6.2-r0               apk                           
 libffi                        3.4.6-r0               apk                           
 libgcc                        13.2.1_git20240309-r0  apk                           
