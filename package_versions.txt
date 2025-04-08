@@ -408,7 +408,7 @@ xmlhttprequest-ssl            2.0.0                  npm
 xpath                         0.0.32                 npm                            
 xterm                         5.2.1                  npm                            
 xterm-addon-fit               0.7.0                  npm                            
-xz-libs                       5.6.2-r0               apk                            
+xz-libs                       5.6.2-r1               apk                            
 y18n                          5.0.8                  npm                            
 yargs                         17.7.2                 npm                            
 yargs-parser                  21.1.1                 npm                            
