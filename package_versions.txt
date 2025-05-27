@@ -269,6 +269,7 @@ netutil                       0.0.2                  npm
 nghttp2-libs                  1.62.1-r0              apk                            
 node-pty                      1.0.0                  npm                            
 nodejs                        20.15.1-r0             apk                            
+o3plugin_dbg                  UNKNOWN                binary                         
 object-assign                 4.1.1                  npm                            
 object-inspect                1.12.2                 npm                            
 on-finished                   2.3.0                  npm                            
@@ -289,7 +290,7 @@ pln                           2.10.0                 npm
 ppc                           0.2.0                  npm                            
 ppc-api                       3.0.0                  npm                            
 procps-ng                     4.0.4-r0               apk                            
-pyc                           3.12.10-r0             apk                            
+pyc                           3.12.10-r1             apk                            
 pylon.alive                   0.0.1                  npm                            
 pylon.client-plugins          0.0.1                  npm                            
 pylon.client-plugins-packed   0.0.1                  npm                            
@@ -333,9 +334,9 @@ pylon.run.ruby                0.0.1                  npm
 pylon.run.sandbox             0.0.1                  npm                            
 pylon.run.shell               0.0.1                  npm                            
 pylon.socket                  0.0.1                  npm                            
-python3                       3.12.10-r0             apk                            
-python3-pyc                   3.12.10-r0             apk                            
-python3-pycache-pyc0          3.12.10-r0             apk                            
+python3                       3.12.10-r1             apk                            
+python3-pyc                   3.12.10-r1             apk                            
+python3-pycache-pyc0          3.12.10-r1             apk                            
 qs                            6.11.0                 npm                            
 qs                            6.11.2                 npm                            
 random-bytes                  1.0.0                  npm                            
