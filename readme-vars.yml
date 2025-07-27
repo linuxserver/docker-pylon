@@ -8,6 +8,7 @@ project_blurb: |
   [{{ project_name|capitalize }}]({{ project_url }}) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_categories: "Programming"
+project_deprecation_status: true
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
@@ -77,6 +78,7 @@ init_diagram: |
   "pylon:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "27.07.25:", desc: "Deprecate."}
   - {date: "26.08.24:", desc: "Rebase to Alpine 3.20"}
   - {date: "12.07.23:", desc: "Rebase to Alpine 3.18"}
   - {date: "04.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
